@@ -9,10 +9,10 @@ server.get("/home", (request, reply) => {
 });
 
 server.listen({
-    port: 3000  
+    port: process.env.PORT  
 });
 
-
+  
 
 //Tambem podemos usar desta forma a definição  das rotas criando uma variavel controller.
 // Porem neste caso o Typescript sempre pede os tipos das variaveis da função callback  
